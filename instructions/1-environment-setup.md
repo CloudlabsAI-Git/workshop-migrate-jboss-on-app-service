@@ -113,24 +113,26 @@ Replace the entire file with the below content, and then replace the placeholder
 ```jsonc
 {
     "terminal.integrated.env.linux": {
-        // Obtain your subscription ID with hint above
+        // Provide the value which you noted down earlier
         "SUBSCRIPTION_ID": "[Your Azure Subscription ID]",
 
-        // these must be unique to you, consider using initials of your name
-        "DB_SERVER_NAME": "[Your initials]-postgres-database",
-        "WEBAPP_NAME": "[Your initials]-webapp",
+        //Provide the value which you noted down earlier
+        //it should come like redhattestxxxxxxxx
+        "ASE_WEBAPP_NAME": "[Paste the webapp name here]", 
 
-        // this must be the same name from the ARM template you deployed earlier, and different from WEBAPP_NAME
-        "ASE_WEBAPP_NAME": "[Your initials]-ase-webapp",
+        // these must be unique to you.
+        "DB_SERVER_NAME": "[Unique-value]-postgres-database",
+        "WEBAPP_NAME": "[Unique-value]-webapp",
+        //Provide the value which you noted down earlier.
+        "RESOURCE_GROUP": "[Resource-group-name]", 
+        
+        // the locatio should looks like eastus, westus, eastus2
+        "LOCATION": "[Resource-group-location]",   
 
         // these are OK to be hard-coded
-        "RESOURCE_GROUP": "jboss-rg",
         "SERVICE_PRINCIPAL_NAME": "jboss-ase-sp",
         "DB_USERNAME": "cooladmin",
-        "DB_PASSWORD": "EAPonAzure1",
-
-        // use this default, or use a location closer to you
-        "LOCATION": "eastus"
+        "DB_PASSWORD": "EAPonAzure1"
     }
 }
 ```
@@ -161,4 +163,3 @@ You should see the same values you entered. Now each new Terminal you open will 
 > newly-opened Terminal and open a new one and try the above command again until it shows correct values.
 
 
-➡️ Next section: [2 - Learn about Azure App Service](2-learn-about-app-service.md)
