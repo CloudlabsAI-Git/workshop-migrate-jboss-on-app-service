@@ -4,7 +4,7 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/workshop-migrate-jboss-on-app-service/main/instructions/1-environment-setup.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/1-environment-setup.md",
         "Order": 1
 
       },
