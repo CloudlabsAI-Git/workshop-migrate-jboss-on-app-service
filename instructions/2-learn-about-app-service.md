@@ -72,7 +72,7 @@ First, we will need a new resource group to house the resources we will create i
 
 You should see the following on the web app:
 
-<img src="../img/1-landing.png" width=700 align=center>
+![The Azure Portal](../img/1-landing.png)
 
 ## 2.4 - The Azure Portal
 
