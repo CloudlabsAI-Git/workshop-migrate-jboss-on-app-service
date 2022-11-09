@@ -99,6 +99,3 @@ az webapp config appsettings set -g $RESOURCE_GROUP -n $ASE_WEBAPP_NAME --settin
 
 ---
 
-⬅️ Previous section: [5 - Setup GitHub Actions](5-set-up-github-actions.md)
-
-➡️ Next section: [7 - Deploy to Staging Slots](7-deploy-to-staging-slots.md)
