@@ -50,6 +50,3 @@ Asymmetric routing worked in the context of this workshop, but it can cause prob
 
 ---
 
-⬅️ Previous section: [6 - App Service Environment](6-app-service-environment.md)
-
-➡️ Next section: [8 - Conclusion](8-conclusion.md)
