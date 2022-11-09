@@ -133,6 +133,3 @@ The EAP log content is found in the `LogFiles/Application/server.xxxxx.log` file
 
 ---
 
-⬅️ Previous section: [1 - Environment Setup](1-environment-setup.md)
-
-➡️ Next section: [3 - Migrate a WebLogic app to JBoss EAP](3-migrate-weblogic-to-jboss.md)
