@@ -65,6 +65,39 @@ The exercises in this workshop will involve creating and configuring resources f
 
 > If you couldn't authenticate using the browser window, you can log in using your username and password directly in the command, `az login -u johndoe@contoso.com -p verySecretPassword`. This only works if your account does **not** have 2FA enabled.
 
+## 1.2.1 - Locate Resources Name
+
+* **Azure Portal:**
+
+    To login to [Azure Portal](https://www.portal.azure.com/) . 
+
+    ![Azure Portal](../img/0-azure-portal-login.png)
+
+    Use the credential provided by Cloudlabs to Login.
+
+    ![cloudlabs-creds](../img/0-cloudlabs-creds.png)
+    
+    Go to [Azure Portal](https://portal.azure.com/) and search **Resource Groups**.
+
+    ![Resource Groups](../img/0-ResourceGroup.png)
+    
+    Select **Resource Groups** and Note down the following values. (*You will be using the value further in the exercise*)
+
+    * **Resource Group Name** : Your resource group name should look like `ODL-Jboss-XXXXXX-Jbossonapp`
+    * **Subscription ID**
+    * **Location**:
+    * **ASE Webapp Name** : Your ASE Webapp Name should look like `redhattestXXXXXXX`
+
+```
+**TIP💡:** To know your resource group location code. Run the following command.
+```  
+
+```bash
+az group show --name <Resource Group Name>
+```
+
+![Resource Groups](../img/0-aio.png)
+
 ## 1.3 - Configure the workspace
 
 Let's set some environment variables for later use. Press `F1` to open the command search window, and type `settings` into the search box, then select **Preferences: Open Workspace Settings (JSON)**. This will open a mostly empty file:
@@ -127,36 +160,5 @@ You should see the same values you entered. Now each new Terminal you open will 
 > the file is saved by clicking into the file, and using `CTRL-S` (or `CMD-S` on a Mac), then close the
 > newly-opened Terminal and open a new one and try the above command again until it shows correct values.
 
-## 1.4 - Deploy the App Service Environment
-
-> **Warning:**
->
-> If you already executed this the day before the workshop, you can safely skip this section,
-> as there is no need to execute it again (it will produce a deployment error that is harmless).
-
-Later sections of this workshop will introduce and explain the App Service Environment, a single-tenant version of App Service. This service is quite large, so we will initiate the deployment for it now so that it is ready for us in the later sections of the workshop
-
-1. First, create a resource group:
-
-    ```bash
-    az group create --name $RESOURCE_GROUP --location $LOCATION
-    ```
-
-2. Next, deploy the ARM Template to that resource group (this will take 2-3 hours to complete!). The `ASE_WEBAPP_NAME` must be globally unique, so consider using part of your name or including numbers.
-
-    ```bash
-    az deployment group create \
-        --name ase_deployment \
-        --resource-group $RESOURCE_GROUP \
-        --template-uri https://raw.githubusercontent.com/Azure-Samples/workshop-migrate-jboss-on-app-service/main/templates/ase-template.json \
-        --no-wait \
-        --parameters webAppName=${ASE_WEBAPP_NAME}
-    ```
-
-> **Tip**: You can view the progress of your deployments in the Azure Portal by navigating to your resource group, and clicking on the **Deployments** tab.
-
-*Congratulations!* Your GitPod workspace is now ready to go. Click the link below to go to the next section
-
----
 
 ➡️ Next section: [2 - Learn about Azure App Service](2-learn-about-app-service.md)
