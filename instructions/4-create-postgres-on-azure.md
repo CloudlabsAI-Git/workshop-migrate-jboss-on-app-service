@@ -181,6 +181,3 @@ If you then browse your your GitHub repository in a separate tab (e.g. _https://
 
 ---
 
-⬅️ Previous section: [3 - Migrate a WebLogic app to JBoss EAP](3-migrate-weblogic-to-jboss.md)
-
-➡️ Next section: [5 - Deploy with GitHub Actions](5-set-up-github-actions.md)
