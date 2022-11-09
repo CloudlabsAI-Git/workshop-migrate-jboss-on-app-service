@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "workshop-migrate-jboss-on-app-service",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/workshop-migrate-jboss-on-app-service/main/instructions/1-environment-setup.md",
+        "Order": 1
+
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/2-learn-about-app-service.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/3-migrate-weblogic-to-jboss.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/4-create-postgres-on-azure.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/5-set-up-github-actions.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/6-app-service-environment.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/7-deploy-to-staging-slots.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/8-conclusion.md",
+        "Order": 8
+      }
+    ]
+  }
+]
+  
