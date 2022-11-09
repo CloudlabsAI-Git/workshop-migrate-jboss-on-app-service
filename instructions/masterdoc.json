@@ -35,7 +35,16 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/8-conclusion.md",
         "Order": 8
-      }
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/A-application-insights.md",
+        "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/B-clustered-deployments.md",
+        "Order": 10
+      },
+      
     ]
   }
 ]
