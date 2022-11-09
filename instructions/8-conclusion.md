@@ -15,5 +15,3 @@ az group delete --name $RESOURCE_GROUP --yes
 Have feedback, a suggestion, or found a typo? Please let us know by [filing an issue on the GitHub Repository](https://github.com/Azure-Samples/workshop-migrate-jboss-on-app-service/issues/new).
 
 ---
-
-⬅️ Previous section: [7 - Deploy to Staging Slots](7-deploy-to-staging-slots.md)
