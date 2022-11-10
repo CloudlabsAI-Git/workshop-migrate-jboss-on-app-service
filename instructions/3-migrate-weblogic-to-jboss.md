@@ -145,16 +145,10 @@ Let's jump to code containing identified migration issues. Expand the **workshop
 
 **_TIP:_** You can use [CTRL+p] (or [CMD+p] on macOS) to quickly open a file. Simply start typing the name of the file in the text box that appears and select your file from the list that is produced.
 
-<p align="center">
-<img src="../img/2-mta_project_issues.png" width=500 align=center>
-</p>
 ![landing oage](../img/2-mta_project_overview.png)
 
 In the Explorer, MTA issues use an icon to indicate their severity level and status. The following table describes the meaning of the various icons:
 
-<p align="center">
-<img src="../img/2-mta-issues-table.png" width=700 align=center>
-</p>
 ![landing oage](../img/2-mta_project_overview.png)
 
 ### 3.4.2 - View Details about the Migration Issues
@@ -163,16 +157,10 @@ In the Explorer, MTA issues use an icon to indicate their severity level and sta
 
 Let's take a look at the details about the migration issue. Right-click on `WebLogic ApplicationLifecycleListener[rule-id:xxx]` in _Hints_ of _StartupListener.java_ file. Click on `View Details`:
 
-<p align="center">
-<img src="../img/2-mta-issue-detail.png" width=900 align=center>
-</p>
 ![landing oage](../img/2-mta_project_overview.png)
 
 MTA also provides helpful links to understand the issue deeper and offer guidance for the migration when you click on `Open Report`:
 
-<p align="center">
-<img src="../img/2-mta-issue-open-report.png" width=900 align=center>
-</p>
 ![landing oage](../img/2-mta_project_overview.png)
 
 The WebLogic `ApplicationLifecycleListener` abstract class is used to perform functions or schedule jobs in Oracle WebLogic, like server start and stop. In this case we have code in the `postStart` and `preStop` methods which are executed after WebLogic starts up and before it shuts down, respectively.
@@ -189,7 +177,7 @@ Using this method makes the code much more portable.
 
 In this section we're going to deal with the following two issues from the report:
 
-![landing oage](../img/2-report_applifecycle_issues.pn)
+![landing oage](../img/2-report_applifecycle_issues.png)
 
 To begin we are fixing the issues under the Monolith application. Right-click on `WebLogic ApplicationLifecycleListener[rule-id:xxx]` in _Hints_ of _StartupListener.java_ file. Click on `Open Code`:
  
