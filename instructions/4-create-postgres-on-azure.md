@@ -46,7 +46,7 @@ You should see the FQDN that looks like `<server_name>-.postgres.database.azure.
 
 Next, In the Azure Portal, navigate to _Home > All Resources_. You should see your Database in the list of recent resources (along with your JBoss EAP App Service). Click on the database to show various details about the service.
 
-<img src="../img/3-db-overview.png" width=700 align=center>
+![landing oage](../img/3-db-overview.png)
 
 Next, we'll need to allow access to the database from services within Azure (like App Service, where our EAP app will eventually run). You can do that in the "Connection security" panel of the Azure Database blade by toggling the "Allow access to Azure services" button to the "ON" position and clicking **Save**. Alternatively, you can run the following CLI command:
 
@@ -72,7 +72,7 @@ First, we need to create some files that will implement that hook, and upload it
 
 In the IDE, right-click on the `setup` directory and choose **New File**:
 
-<img src="../img/3-new-file.png" width=700 align=center>
+![landing oage](../img/3-new-file.png)
 
 Name the file `startup.sh`. In this file, add the following content:
 
@@ -108,11 +108,11 @@ It should report:
 
 The scripts above refer to a number of environment variables that must be set on the EAP App Service. On the Azure Portal, navigate to _Home > All Resources_ once again, and you should see your _App Service_ that you created earlier, alongside your Postgres Database.
 
-<img src="../img/3-all-resources.png" width=700 align=center>
+![landing oage](../img/3-all-resources.png)
 
 Click on the App Service to get details about it. Under the _Settings_ category on the left, click on _Configuration_:
 
-<img src="../img/3-appsvc-settings.png" width=700 align=center>
+![landing oage](../img/3-appsvc-settings.png)
 
 Here, you will need create 3 new settings. You can print out the values you'll need by running the following commands in a Terminal in your IDE:
 
@@ -123,11 +123,11 @@ echo "POSTGRES_SERVER_ADMIN_PASSWORD --> $DB_PASSWORD"
 ```
 Create a new Application Setting for each of the above by clicking on **New Application Setting** and filling in the values and clicking OK:
 
-<img src="../img/3-appsvc-setting-dialog.png" width=700 align=center>
+![landing oage](../img/3-appsvc-setting-dialog.png)
 
 Once you have created 3 new settings, be sure to save the changes. Click on `Save` then `Continue` to restart your application:
 
-<img src="../img/3-appsvc-setting-save-dialog.png" width=700 align=center>
+![landing oage](../img/3-appsvc-setting-save-dialog.png)
 
 You can also use the `az` command line to accomplish the same thing:
 
