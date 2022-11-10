@@ -38,27 +38,37 @@ When the deployment template is complete, you can get the public IP address from
 
 Now that our site is secured behind an App Gateway within a Virtual Network, we cannot simply push our code from GitHub Actions as we did previously. Now we will need to update our GitHub Actions workflow to publish the artifacts to a Storage Account, and trigger the site to *pull* the artifacts from the Storage Account. The site is still allowed outbound access, so it is able to pull the code from storage.
 
-First, we will need to create a Service Principal so that our workflow can log into our Azure Subscription to create and manage the storage account.
-1. Add the Microsoft.Storage resource provider to your subscription.
+First, we will need to update Service Principal so that our workflow can log into our Azure Subscription.
 
-    ```bash
-    az provider register -n Microsoft.Storage --wait
-    ```
+1. You can get the details of Service Pricipal from the CloudLabs page.
+2. Open a browser to your fork of the repository on GitHub.
+3. On the repository, go to **Settings** > **Secrets** > **New repository secret**.
+4. Replace the values of **ClientID, ClientSecret, SubscriptionID, TenantID** with the values you get from CloudLabs - Service Principle details. It should look like this
 
-2. Create a Service Principle for the resource group:
+```
+**Tip💡:** Proceed to cloudlabs details and click on service principle to get the details.
+```
 
-    ```bash
-    az ad sp create-for-rbac \
-        --name "$SERVICE_PRINCIPAL_NAME" \
-        --sdk-auth \
-        --role contributor \
-        --scopes /subscriptions/$SUBSCRIPTION_ID/resourceGroups/$RESOURCE_GROUP
-    ```
+**Note:** Replace the cliend id, client secret, subscription id, tenant id
 
-   Copy the output, you will need it in step 5.
+![service principal](../img/5-service-principle.png)
 
-3. Open a browser to your fork of the repository on GitHub.
-4. On the repository, go to **Settings** > **Secrets** > **New repository secret**.
+
+```jsonc
+{
+  "clientId": "67b6cf14-0050-419b-a78e-d061e3a1394e",
+  "clientSecret": "DTu._pEGE7LeU3ousQTGasSxwdBcxHP0U2-",
+  "subscriptionId": "693eabcf-7fb7-4144-8da4-9ef27487ec90",
+  "tenantId": "b84b647a-5f02-4f6e-8603-7059fa761d2f",
+
+  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+  "resourceManagerEndpointUrl": "https://management.azure.com/",
+  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+  "galleryEndpointUrl": "https://gallery.azure.com/",
+  "managementEndpointUrl": "https://management.core.windows.net/"
+}
+```
 5. Under **Name**, enter `AZURE_CREDENTIALS`. Under **Value**, paste the output from the Azure CLI command you ran on step two.
 6. Click **Add secret**
 
