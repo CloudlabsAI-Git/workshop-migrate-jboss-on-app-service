@@ -117,17 +117,17 @@ Wait for it to complete:
 
 Once the GitHub action completes, after a minute or so, the application will be deployed and ready! Visit the application's URL, which you can find in the above output from GitHub Actions or on the Azure Portal at _Home > All Resources > <your_app_service> > Overview_:
 
-<img src="../img/4-appsvc-url.png" width=700 align=center>
+![Java with Maven template](../img/4-appsvc-url.png)
 
 Click on the URL, and you should now see the Coolstore application running on App Service:
 
-<img src="../img/4-appsvc-app.png" width=700 align=center>
+![Java with Maven template](../img/4-appsvc-app.png)
 
 > **NOTE**: You may see the default JBoss EAP landing page instead. It may take a few minutes for the app to deploy and be ready, so just give it a minute before refreshing. If you still don't see the app, check for invalid or missing setup scripts, or invalid values for the Application Settings (connection URL, username or password) from prior exercises. Double-check the values are correct and try to re-deploy the application again!
 
 > **NOTE**: You can manually trigger another workflow run by clicking on the **Actions** tab, then clicking on the action you wish to re-run, and finally click on **Re-run jobs** and selecting **Re-run all jobs**:
 
-<img src="../img/4-rerun.png" width=700 align=center>
+![Java with Maven template](../img/4-rerun.png)
 
 ## 5.5 - Exercise: Make a code change and see it automatically deployed
 
