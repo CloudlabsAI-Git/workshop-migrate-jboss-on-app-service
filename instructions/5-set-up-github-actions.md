@@ -133,7 +133,7 @@ Click on the URL, and you should now see the Coolstore application running on Ap
 >   --type war
 > ```
 
-> **NOTE**: You can manually trigger another workflow run by clicking on the **Actions** tab, then clicking on the action you wish to re-run, and finally click on **Re-run jobs** and selecting **Re-run all jobs**:
+> > **NOTE**: You can also manually trigger another workflow run by clicking on the **Actions** tab, then clicking on the action you wish to re-run, and finally click on **Re-run jobs** and selecting **Re-run all jobs**:
 
 ![Java with Maven template](../img/4-rerun.png)
 
