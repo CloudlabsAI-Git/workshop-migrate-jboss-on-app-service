@@ -9,19 +9,19 @@
 
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/2-learn-about-app-service.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Azure-Samples/workshop-migrate-jboss-on-app-service/main/instructions/2-learn-about-app-service.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/3-migrate-weblogic-to-jboss.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Azure-Samples/workshop-migrate-jboss-on-app-service/main/instructions/3-migrate-weblogic-to-jboss.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/4-create-postgres-on-azure.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Azure-Samples/workshop-migrate-jboss-on-app-service/main/instructions/4-create-postgres-on-azure.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/5-set-up-github-actions.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Azure-Samples/workshop-migrate-jboss-on-app-service/main/instructions/5-set-up-github-actions.md",
         "Order": 5
       },
       {
@@ -29,11 +29,11 @@
         "Order": 6
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/7-deploy-to-staging-slots.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Azure-Samples/workshop-migrate-jboss-on-app-service/main/instructions/7-deploy-to-staging-slots.md",
         "Order": 7
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudlabsAI-Git/workshop-migrate-jboss-on-app-service/main/instructions/8-conclusion.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Azure-Samples/workshop-migrate-jboss-on-app-service/main/instructions/8-conclusion.md",
         "Order": 8
       }
       
