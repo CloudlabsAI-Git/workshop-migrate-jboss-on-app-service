@@ -16,7 +16,7 @@ This workshop uses GitPod to provide a pre-configured development environment wi
     > Make sure you select **New Project** at this point, and not **New Workspace**.
     > Also make sure you select VS Code 1.76.0 Browser Latest:
     
-     ![Select latest VS Code](../img/gitpodvs.png)
+     ![Select latest VS Code](../img/gitpodvs.PNG)
 
 4. Next, select **Authorize**
 
